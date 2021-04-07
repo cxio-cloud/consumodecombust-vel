@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Consumo de combustível </title>
+		<meta charset="utf-8">
+		<h1> Consumo de combustível </h1>
+	</head>
+	<body>
+		Tempo gasto em horas: <input type="text" name="num1" id="num1Id" placeholder="Digite"/>
+		<br/>
+		Velocidade média em km/h: <input type="text" name="num2" id="num2Id" placeholder="Digite"/>
+		<br/>
+		<input type="button" value="Resultado" id="btn-Resultado"/>
+			<script type="text/javascript">
+				document.getElementById('btn-Resultado').addEventListener('click', function() {
+					var dist = Number (document.getElementById('num1Id').value)*
+							   Number (document.getElementById('num2Id').value);
+						function multtiplicaçãoDoisNumeros (primeiro, segundo) {
+							var resultado = primeiro * segundo;
+							return resultado;
+						}
+							alert('Distância percorrida: '+ dist);
+							alert('Consumo por litro: '+ dist/12);
+							})
+		
+			</script>
+	</body>
+</html>
